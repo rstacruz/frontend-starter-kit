@@ -18,6 +18,10 @@ if (process.env.NODE_ENV === 'development') {
 var app = Metalsmith(__dirname)
   .source('./web')
   .destination('./public')
+  .ignore([
+    '_layouts',
+    '_includes'
+  ])
   .use(require('metalsmith-jstransformer')())
   .use(require('metalsmith-sense-sass')())
   .use(b)

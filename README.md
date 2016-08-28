@@ -25,3 +25,12 @@ Build:
 ```
 npm run build
 ```
+
+## Paths
+
+| Path | Description |
+| ---- | ----------- |
+| `/web` | All files here are mapped onto `/public` after compilation. |
+| `/css` | Sass files. These are Sass `@import`ed from `/web`. |
+| `/js` | Browserify sources. |
+| `/public` | Where things are built into. |
