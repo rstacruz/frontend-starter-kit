@@ -1,7 +1,7 @@
 var Metalsmith = require('metalsmith')
 
 var app = Metalsmith(__dirname)
-  .source('./web')
+  .source('./web/assets')
   .destination('./public')
   .use(require('metalsmith-jstransformer')())
   .use(require('metalsmith-sense-sass')())
