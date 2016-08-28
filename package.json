@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "run -p build:*",
-    "watch": "run -p watch:*",
+    "build": "env NODE_ENV=production node metalsmith.js",
     "prepublish": "npm run build",
     "start": "metalsmith-start"
   },
@@ -44,6 +43,7 @@
   },
   "devDependencies": {
     "metalsmith-start": "2.0.1",
-    "npm-run-all": "3.0.0"
+    "npm-run-all": "3.0.0",
+    "watchify": "3.7.0"
   }
 }

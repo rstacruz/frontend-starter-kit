@@ -9,7 +9,9 @@ b.bundle.transform('babelify')
 
 if (process.env.NODE_ENV === 'production') {
   b.bundle.transform({ global: true }, 'uglifyify')
-} else {
+}
+
+if (process.env.NODE_ENV === 'development') {
   b.bundle.plugin('watchify')
 }
 
