@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default function () {
-  return <div>Hello from React!</div>
+  return <div className="frontend-welcome">Hello from React!</div>
 }

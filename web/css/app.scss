@@ -1,3 +1,19 @@
 @import '../../node_modules/normalize.css/normalize';
 
-div { color: red; }
+$sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+html {
+  background: #f0f2fa;
+  font-family: $sans;
+}
+
+.frontend-welcome {
+  text-align: center;
+  height: 20vh;
+  line-height: 20vh;
+  color: #789;
+  font-weight: 300;
+  font-size: 24px;
+  border-radius: 4px;
+  margin: 40vh auto;
+}

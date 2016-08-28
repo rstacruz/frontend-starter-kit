@@ -1,1 +1,1 @@
-document.getElementById('app').innerHTML = 'Hello!'
+document.getElementById('app').innerHTML = '<div class="frontend-welcome">Hello!</div>'

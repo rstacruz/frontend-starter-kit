@@ -1,5 +1,5 @@
 import { element } from 'decca'
 
 export default function () {
-  return <div>Hello from Decca!</div>
+  return <div class="frontend-welcome">Hello from Decca!</div>
 }
