@@ -76,6 +76,8 @@ __It's (kinda) functional.__ Metalsmith brings together plugins that transform f
 
 __It's also great for development.__ [metalsmith-start](https://www.npmjs.com/package/metalsmith-start) is a fantastic development server for Metalsmith. It rebuilds your files instantaneously as you change them, supports LiveReloading, and can run on any Metalsmith project.
 
+__It simplifies many things.__ Everything here is in <100 lines of JS and JSON (including package.json). The only significant pieces here are `metalsmith.js` and the Babel config in `package.json`.
+
 <br>
 
 ## Why not X?
