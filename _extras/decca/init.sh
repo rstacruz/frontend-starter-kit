@@ -1,4 +1,4 @@
-npm install --save --save-exact \
+npm install --cache-min Infinity --save --save-exact \
   riot-route \
   decca \
   redux \

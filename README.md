@@ -13,9 +13,9 @@ Bootstrap into a new project using wget/tar. (yes, you can paste this into a ter
 ```
 mkdir my-project
 cd my-project
-wget https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz -O - \
+wget -q https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz -O - \
  | tar zxv --strip-components=1 --exclude='*.md' --exclude='_extras'
-npm install
+npm install --cache-min Infinity
 ```
 
 Run in development (or production):

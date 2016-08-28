@@ -7,7 +7,7 @@ Some addons to the boilerplate.
 [Decca](http://ricostacruz.com/decca) is a React-like library for rendering functional views.
 
 ```
-wget https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz -O - \
- | tar zxv _extras/decca --strip-components=2
-source init.sh
+wget -q https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz -O - \
+ | tar zxv --strip-components=3 '*/_extras/decca'
+sh init.sh
 ```
