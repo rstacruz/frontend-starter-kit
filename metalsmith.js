@@ -1,7 +1,7 @@
 var Metalsmith = require('metalsmith')
 
-var b = require('metalsmith-browserify')('assets/app.js', {
-  entries: ['js/app.js'],
+var b = require('metalsmith-browserify')('app.js', {
+  entries: ['web/js/app.js'],
   cache: {},
   packageCache: {}
 })
@@ -12,12 +12,8 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 var app = Metalsmith(__dirname)
-  .source('./web')
+  .source('./web/assets')
   .destination('./public')
-  .ignore([
-    '_layouts',
-    '_includes'
-  ])
   .use(require('metalsmith-jstransformer')())
   .use(require('metalsmith-sense-sass')())
   .use(b)

@@ -34,9 +34,9 @@ npm run build
 
 | Path | Description |
 | ---- | ----------- |
-| `/web` | All files here are mapped onto `/public` after compilation. |
-| `/css` | Sass files. These are Sass `@import`ed from `/web`. |
-| `/js` | Browserify sources. |
+| `/web/assets` | All files here are mapped onto `/public` after compilation. |
+| `/web/css` | Sass files. These are Sass `@import`ed from `/web/assets/app.scss`. |
+| `/web/js` | Browserify sources. These are defined from config in metalsmith.js. |
 | `/public` | Where things are built into. |
 
 <br>
