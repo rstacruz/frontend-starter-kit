@@ -13,7 +13,7 @@ Bootstrap into a new project with one command. (See [INSTALL.sh](INSTALL.sh) to 
 ```sh
 mkdir my-project
 cd my-project
-curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/INSTALL.sh | sh
+curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/INSTALL.sh | bash
 ```
 
 Run in development (or production):
