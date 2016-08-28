@@ -23,9 +23,6 @@ curl -sSL https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz
  --exclude='INSTALL.sh' \
  '*/_extras/react'
 
-npm uninstall --save babel-plugin-syntax-jsx
-npm uninstall --save babel-plugin-transform-react-jsx
-
 npm install --cache-min Infinity --save --save-exact \
   react \
   react-dom \
@@ -35,4 +32,4 @@ npm install --cache-min Infinity --save --save-exact \
   build-reducer \
   babel-preset-react
 
-set_json_data package.json babel '{ presets: ["es2015", "es2017", "react"] }'
+set_json_data package.json babel '{ presets: ["latest", "stage-0", "react"] }'
