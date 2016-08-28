@@ -24,7 +24,7 @@ Run in development (or production):
 npm start
 ```
 
-Build:
+Or build for production (builds `/public`):
 
 ```
 npm run build
