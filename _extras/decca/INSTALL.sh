@@ -14,7 +14,7 @@ node <(cat << EOF
   })
 
   here[last] = eval(\`($3)\`)
-  require('fs').writeFileSync(\`$1\`, JSON.stringify(data, null, 2), 'utf-8')
+  require('fs').writeFileSync(\`$1\`, JSON.stringify(data, null, 2) + '\n', 'utf-8')
 EOF)
 }
 
