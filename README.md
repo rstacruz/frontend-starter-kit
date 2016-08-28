@@ -34,23 +34,19 @@ npm run build
 
 ## Paths
 
-| Path | Description |
-| ---- | ----------- |
-| `/web` | Where things are built from. |
-| `/public` | Where things are built into. |
+`web/` is compiled into `public/`.
 
-These files are in `web/`:
-
-- **web/assets/** - files compiled into `/public`.
-    - `app.scss`
-    - `index.pug`
-    - `robots.txt`
-- **web/css/** - files *@import*ed by assets/app.scss.
-    - `app.scss`
-- **web/js/** - files compiled by Browserify, configured in metalsmith.js.
-    - `app.js`
-- **web/layouts/** - template layouts.
-    - `base.pug`
+- **[web/assets/](web/assets/)** — files compiled into `/public`. Anything not "compilable" is simply copied over.
+    - [app.scss](web/assets/app.scss)
+    - [index.pug](web/assets/index.pug)
+    - [robots.txt](web/assets/robots.txt)
+- **[web/css/](web/css/)** — files *@import*ed by assets/app.scss.
+    - [app.scss](web/css/app.scss)
+- **[web/js/](web/js/)** — files compiled by Browserify, configured in metalsmith.js.
+    - [app.js](web/js/app.js)
+- **[web/layouts/](web/layouts/)** – template layouts.
+    - [base.pug](web/layouts/base.pug)
+- [metalsmith.js](metalsmith.js) — metalsmith configuration.
 
 <br>
 
