@@ -6,8 +6,6 @@ This is a small project that takes a bunch of HTML (`web/`), CSS (`css/`), JS fi
 
 ## What you get
 
-Features:
-
 - Extensible _everything_ build pipeline (via [Metalsmith](http://metalsmith.io))
 - Extensible JavaScript build pipeline (via [Browserify](http://browserify.org/))
 - Modern JavaScript with support for ES2015, React JSX, and so on (via [Babel](https://babeljs.io/))
@@ -17,11 +15,11 @@ Features:
 - Super-useful development server (via [metalsmith-start](https://www.npmjs.com/package/metalsmith-start))
 - Ready to deploy to Heroku (just `git push`)
 
-## What you don't get
+## What you DON'T get
 
 It's opinionated, but only up to a point. All it does is take `web/` and turn it into `public/` with a production build command (`npm run build`) and a development auto-watcher command (`npm start`). The rest is up to you!
 
-What you DON'T get:
+These things are not included here:
 
 - React (bring your own framework!)
 - Testing boilerplate (bring your own testing tools!)
