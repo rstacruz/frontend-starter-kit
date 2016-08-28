@@ -1,3 +1,4 @@
 module.exports = {
-  entries: [__dirname + '/../js/app.js']
+  entries: [__dirname + '/../js/app.js'],
+  exclude: require('./vendor.browserify.js').require
 }
