@@ -7,10 +7,6 @@ var b = require('metalsmith-browserify')('assets/app.js', {
 })
 b.bundle.transform('babelify')
 
-if (process.env.NODE_ENV === 'production') {
-  b.bundle.transform({ global: true }, 'uglifyify')
-}
-
 if (process.env.NODE_ENV === 'development') {
   b.bundle.plugin('watchify')
 }
@@ -25,6 +21,15 @@ var app = Metalsmith(__dirname)
   .use(require('metalsmith-jstransformer')())
   .use(require('metalsmith-sense-sass')())
   .use(b)
+
+if (process.env.NODE_ENV === 'production') {
+  app = app.use(require('metalsmith-uglifyjs')({
+    override: true,
+    uglifyOptions: {
+      mangle: true, compress: { unused: false, warnings: true }
+    }
+  }))
+}
 
 if (module.parent) {
   module.exports = app
