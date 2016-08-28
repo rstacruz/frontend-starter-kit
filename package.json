@@ -4,8 +4,7 @@
   "author": "Rico Sta. Cruz <rico@ricostacruz.com> (http://ricostacruz.com)",
   "babel": {
     "presets": [
-      "es2017",
-      "stage-0"
+      "es2017"
     ],
     "plugins": [
       "syntax-jsx",
@@ -21,7 +20,6 @@
     "babel-plugin-syntax-jsx": "6.13.0",
     "babel-plugin-transform-react-jsx": "6.8.0",
     "babel-preset-es2017": "6.14.0",
-    "babel-preset-stage-0": "6.5.0",
     "babelify": "7.3.0",
     "browserify": "13.1.0",
     "jstransformer-pug": "0.2.1",

@@ -38,4 +38,3 @@ npm install --cache-min Infinity --save --save-exact \
   babel-preset-es2017
 
 set_json_data package.json babel '{ presets: ["es2017", "react"] }'
-
