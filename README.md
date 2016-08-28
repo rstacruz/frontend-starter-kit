@@ -8,7 +8,7 @@ This is a small project that takes a bunch of HTML, CSS, JS files (`web/`) and t
 
 ## Usage
 
-Bootstrap into a new project with one command. (See [INSTALL.sh](INSTALL.sh) to see what it does)
+Start your new project like so:
 
 ```sh
 mkdir my-project
@@ -16,7 +16,7 @@ cd my-project
 curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/INSTALL.sh | bash
 ```
 
-> If you'd like support for React, see [_extras](/_extras).
+> See [INSTALL.sh](INSTALL.sh) to see what it does. If you'd like support for React, see [_extras/](_extras).
 
 Run in development (or production):
 
