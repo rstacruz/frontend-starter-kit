@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'production') {
   app = app.use(require('metalsmith-uglifyjs')({
     override: true,
     uglifyOptions: {
-      mangle: true, compress: { unused: false, warnings: true }
+      mangle: true, compress: { warnings: false }
     }
   }))
 }
