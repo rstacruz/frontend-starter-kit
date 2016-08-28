@@ -13,7 +13,7 @@ Bootstrap into a project:
 ```
 mkdir my-project
 cd my-project
-wget https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz -O - | tar zxv --strip-components=1
+wget https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz -O - | tar zxv --strip-components=1 --exclude='*.md'
 npm install
 ```
 
