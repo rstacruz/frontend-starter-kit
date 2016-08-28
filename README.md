@@ -36,10 +36,21 @@ npm run build
 
 | Path | Description |
 | ---- | ----------- |
-| `/web/assets` | All files here are mapped onto `/public` after compilation. |
-| `/web/css` | Sass files. These are Sass `@import`ed from `/web/assets/app.scss`. |
-| `/web/js` | Browserify sources. These are defined from config in metalsmith.js. |
+| `/web` | Where things are built from. |
 | `/public` | Where things are built into. |
+
+These files are in `web/`:
+
+- **web/assets/** - files compiled into `/public`.
+    - `app.scss`
+    - `index.pug`
+    - `robots.txt`
+- **web/css/** - files *@import*ed by assets/app.scss.
+    - `app.scss`
+- **web/js/** - files compiled by Browserify, configured in metalsmith.js.
+    - `app.js`
+- **web/layouts/** - template layouts.
+    - `base.pug`
 
 <br>
 
