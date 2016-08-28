@@ -27,8 +27,7 @@
     "metalsmith-browserify": "0.1.0",
     "metalsmith-jstransformer": "0.7.1",
     "metalsmith-sense-sass": "1.1.0",
-    "metalsmith-uglifyjs": "github:rstacruz/metalsmith-uglifyjs#patch-1",
-    "uglifyify": "3.0.2"
+    "metalsmith-uglifyjs": "github:rstacruz/metalsmith-uglifyjs#patch-1"
   },
   "devDependencies": {
     "metalsmith-start": "2.0.1",
