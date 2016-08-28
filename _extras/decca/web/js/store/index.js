@@ -22,7 +22,7 @@ var reducers = {
     return state
   },
 
-  view: (state, {view}) {
+  view (state, {view}) {
     return state
   }
 }
