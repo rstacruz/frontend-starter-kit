@@ -5,13 +5,13 @@ var app = Metalsmith(__dirname)
   .destination('./public')
   .use(require('metalsmith-jstransformer')())
   .use(require('metalsmith-sense-sass')())
-  .use(require('metalsmith-browserify')({
-    output: 'app.js',
-    input: ['web/js/app.js'],
-    cache: {},
-    packageCache: {},
-    transform: ['babelify'],
-    plugin: process.env.NODE_ENV === 'development' ? ['watchify'] : []
+  .use(require('metalsmith-browserify-alt')({
+    defaults: {
+      cache: {},
+      packageCache: {},
+      transform: ['babelify'],
+      plugin: process.env.NODE_ENV === 'development' ? ['watchify'] : []
+    }
   }))
 
 if (process.env.NODE_ENV === 'production') {
