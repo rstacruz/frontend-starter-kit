@@ -21,3 +21,12 @@ This is a React boilerplate with Redux. It uses [riot-route](https://www.npmjs.c
 curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/INSTALL.sh | bash
 curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/react/INSTALL.sh | bash
 ```
+
+## Phoenix
+
+Experimental! Use this with [Phoenix](http://phoenixframework.org/) to replace Brunch with Metalsmith.
+
+```sh
+# Run both:
+curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/phoenix/INSTALL.sh | bash
+```
