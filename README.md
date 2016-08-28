@@ -38,11 +38,13 @@ npm run build
 
 - **[web/assets/](web/assets/)** — files compiled into `/public`. Anything not "compilable" is simply copied over.
     - [app.scss](web/assets/app.scss)
+    - [app.browserify.js](web/assets/app.browserify.js) - compiles web/js/app.js
+    - [vendor.browserify.js](web/assets/vendor.browserify.js) - separate bundle for big 3rd-party modules
     - [index.pug](web/assets/index.pug)
     - [robots.txt](web/assets/robots.txt)
 - **[web/css/](web/css/)** — files *@import*ed by assets/app.scss.
     - [app.scss](web/css/app.scss)
-- **[web/js/](web/js/)** — files compiled by Browserify, configured in metalsmith.js.
+- **[web/js/](web/js/)** — files compiled by Browserify.
     - [app.js](web/js/app.js)
 - **[web/layouts/](web/layouts/)** – template layouts.
     - [base.pug](web/layouts/base.pug)
