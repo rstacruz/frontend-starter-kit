@@ -16,6 +16,8 @@ cd my-project
 curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/INSTALL.sh | bash
 ```
 
+> If you'd like support for React, see [_extras](/_extras).
+
 Run in development (or production):
 
 ```
