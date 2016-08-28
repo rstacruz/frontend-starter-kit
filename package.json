@@ -19,7 +19,7 @@
     "babel-preset-stage-0": "6.5.0",
     "babelify": "7.3.0",
     "browserify": "13.1.0",
-    "jstransformer-jade": "0.1.1",
+    "jstransformer-pug": "0.2.1",
     "metalsmith": "2.2.0",
     "metalsmith-browserify": "0.1.0",
     "metalsmith-jstransformer": "0.7.1",
