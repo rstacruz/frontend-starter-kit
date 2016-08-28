@@ -47,6 +47,7 @@ You can also add support for:
 - non-Pug [partials](https://github.com/RobLoach/metalsmith-jstransformer-partials)
 - [PostCSS](https://www.npmjs.com/package/metalsmith-postcss)
 - Other template engines via jstransformer (eg, [jstransformer-swig](https://github.com/jstransformers/jstransformer-swig)).
+- Add tests with your favorite test framework
 
 ## Thanks
 
