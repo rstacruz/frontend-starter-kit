@@ -35,4 +35,4 @@ npm install --cache-min Infinity --save --save-exact \
   build-reducer \
   babel-preset-react
 
-set_json_data package.json babel '{ presets: ["es2017", "react"] }'
+set_json_data package.json babel '{ presets: ["es2015", "es2017", "react"] }'

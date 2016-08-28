@@ -30,5 +30,5 @@ if (process.env.NODE_ENV === 'production') {
 if (module.parent) {
   module.exports = app
 } else {
-  app.build(function (err) { if (err) throw err })
+  app.build(function (err) { if (err) { console.error(err); process.exit(1) } })
 }

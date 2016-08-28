@@ -28,6 +28,8 @@ npm install --cache-min Infinity --save --save-exact \
   decca \
   redux \
   redux-thunk \
-  build-reducer
+  build-reducer \
+  babel-plugin-transform-react-jsx \
+  babel-plugin-syntax-jsx
 
 set_json_data package.json babel.plugins '[ "syntax-jsx", [ "transform-react-jsx", { "pragma": "element" } ] ]'
