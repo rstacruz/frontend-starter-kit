@@ -1,6 +1,6 @@
 # frontend-starter-kit
 
-> Boilerplate for a frontend project powered by Metalsmith.
+> Boilerplate for a frontend project powered by Metalsmith
 
 This is a small project that takes a bunch of HTML, CSS, JS files (`web/`) and turns them into a website (`public/`). Use it to build your new Reddit webapp, [Pokemon tool](http://weedlecalc.com/), Firebase-based webapp, [Phoenix](http://phoenixframework.org/) app assets, or whatever suits your fancy.
 

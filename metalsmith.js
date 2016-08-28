@@ -1,7 +1,7 @@
 var Metalsmith = require('metalsmith')
 
 var app = Metalsmith(__dirname)
-  .source('./web/assets')
+  .source('./web')
   .destination('./public')
   .use(require('metalsmith-jstransformer')())
   .use(require('metalsmith-sense-sass')())
@@ -48,4 +48,3 @@ function browserify (options) {
 
   return b
 }
-
