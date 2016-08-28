@@ -1,6 +1,6 @@
 # Extras
 
-Some addons to the boilerplate.
+Some addons to the boilerplate. All these are done on top of `frontend-starter-kit`!
 
 ## Decca
 
