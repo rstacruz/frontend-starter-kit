@@ -1,8 +1,7 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # set_json_data package.json babel "{ presets: ['es2015'] }"
 set_json_data() {
-log json "$1 { $2: $3 }"
 node <(cat << EOF
   var data = JSON.parse(require('fs').readFileSync(\`$1\`, 'utf-8'))
   var parts = \`$2\`.split('.')
@@ -34,7 +33,6 @@ npm install --cache-min Infinity --save --save-exact \
   redux \
   redux-thunk \
   build-reducer \
-  babel-preset-react \
-  babel-preset-es2017
+  babel-preset-react
 
 set_json_data package.json babel '{ presets: ["es2017", "react"] }'
