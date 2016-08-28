@@ -8,12 +8,13 @@ This is a small project that takes a bunch of HTML, CSS, JS files (`web/`) and t
 
 ## Usage
 
-Bootstrap into a project:
+Bootstrap into a new project using wget/tar. (yes, you can paste this into a terminal)
 
 ```
 mkdir my-project
 cd my-project
-wget https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz -O - | tar zxv --strip-components=1 --exclude='*.md'
+wget https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz -O - \
+ | tar zxv --strip-components=1 --exclude='*.md' --exclude='_extras'
 npm install
 ```
 
