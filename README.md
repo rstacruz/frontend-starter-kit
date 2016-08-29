@@ -57,7 +57,7 @@ npm run build
 - Extensible _everything_ build pipeline (via [Metalsmith](http://metalsmith.io))
 - Extensible JavaScript build pipeline (via [Browserify](http://browserify.org/))
 - Modern JavaScript with support for ES2017 (via [Babel](https://babeljs.io/))
-- Modern CSS via Sass, PostCSS, and Autoprefixer
+- Modern CSS via Sass, PostCSS, Cssnext, and Autoprefixer
 - Support for Pug (as well as any templating language) via [jstransformer](https://github.com/RobLoach/metalsmith-jstransformer)
 - Production-ready tools (JS and CSS compression)
 - Super-useful development server (via [metalsmith-start](https://www.npmjs.com/package/metalsmith-start))

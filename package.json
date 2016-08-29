@@ -17,7 +17,7 @@
     "metalsmith": "2.2.0",
     "metalsmith-browserify-alt": "1.0.1",
     "metalsmith-jstransformer": "0.7.1",
-    "metalsmith-sense-sass": "1.1.0",
+    "metalsmith-sense-sass": "2.0.0",
     "metalsmith-uglifyjs": "github:rstacruz/metalsmith-uglifyjs#patch-1",
     "normalize.css": "4.2.0"
   },
