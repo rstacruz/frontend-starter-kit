@@ -83,6 +83,7 @@ npm run build
 - Extensible JavaScript build pipeline (via [**Browserify**](http://browserify.org/))
 - Modern JavaScript with support for ES2017 (via [**Babel**](https://babeljs.io/))
 - Modern CSS via [**Sass**](https://www.npmjs.com/package/node-sass), PostCSS, [**Cssnext**](http://cssnext.io/), and Autoprefixer
+- Reliable dependency management via [**Yarn**](https://yarnpkg.com/)
 
 As well as:
 

@@ -23,7 +23,7 @@ curl -sSL https://github.com/rstacruz/frontend-starter-kit/archive/master.tar.gz
  --exclude='INSTALL.sh' \
  --wildcards '*/_extras/decca'
 
-npm install --cache-min Infinity --save --save-exact \
+yarn add --exact \
   riot-route \
   decca \
   redux \

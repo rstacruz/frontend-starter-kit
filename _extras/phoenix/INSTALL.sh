@@ -2,6 +2,11 @@
 # This bootstraps the frontend kit, but builds from
 # `web/static` into `priv/static` (according to Phoenix conventions).
 
+if ! which yarn >/dev/null; then
+  echo "! You need yarn. See: https://yarnpkg.com/"
+  exit 1
+fi
+
 TMP=_frontendkit.$RANDOM
 mkdir -p $TMP
 cd $TMP
@@ -28,15 +33,15 @@ cat $TMP/metalsmith.js \
   > metalsmith.js
 
 # Put back Phoenix stuff
-npm install --save file:deps/phoenix
-npm install --save file:deps/phoenix_html
+yarn add file:deps/phoenix
+yarn add file:deps/phoenix_html
 
 mkdir -p priv/static
 
 # Cleanup
 rm -rf $TMP
 
-npm install --cache-min Infinity
+yarn
 
 echo ""
 echo "Update config/dev.exs:"
