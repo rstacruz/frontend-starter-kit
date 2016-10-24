@@ -55,7 +55,6 @@ curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master
 Experimental! Use this with [Phoenix](http://phoenixframework.org/) to replace Brunch with Metalsmith. Bootstrap your app with `mix phoenix.new --no-brunch`, then:
 
 ```sh
-# Run both:
 curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/phoenix/INSTALL.sh | bash
 ```
 </details>
