@@ -10,7 +10,7 @@ This is a small project that takes a bunch of HTML, CSS, JS files (`web/`) and t
 
 See instructions for:
 
-<details>
+<details open>
 <summary>**Vanilla** (no framework)</summary>
 
 ```sh
@@ -78,32 +78,15 @@ npm run build
 
 <br>
 
-## Paths
-
-`web/` is compiled into `public/`.
-
-- **[web/assets/](web/assets/)** — files compiled into `/public`. Anything not "compilable" is simply copied over.
-    - [app.scss](web/assets/app.scss)
-    - [app.browserify.js](web/assets/app.browserify.js) - compiles web/js/app.js
-    - [vendor.browserify.js](web/assets/vendor.browserify.js) - separate bundle for big 3rd-party modules
-    - [index.pug](web/assets/index.pug)
-    - [robots.txt](web/assets/robots.txt)
-- **[web/css/](web/css/)** — files *@import*ed by assets/app.scss.
-    - [app.scss](web/css/app.scss)
-- **[web/js/](web/js/)** — files compiled by Browserify.
-    - [app.js](web/js/app.js)
-- **[web/layouts/](web/layouts/)** – template layouts.
-    - [base.pug](web/layouts/base.pug)
-- [metalsmith.js](metalsmith.js) — metalsmith configuration.
-
-<br>
-
 ## What you get
 
-- Extensible _everything_ build pipeline (via [Metalsmith](http://metalsmith.io))
-- Extensible JavaScript build pipeline (via [Browserify](http://browserify.org/))
-- Modern JavaScript with support for ES2017 (via [Babel](https://babeljs.io/))
-- Modern CSS via Sass, PostCSS, Cssnext, and Autoprefixer
+- Extensible _everything_ build pipeline (via [**Metalsmith**](http://metalsmith.io))
+- Extensible JavaScript build pipeline (via [**Browserify**](http://browserify.org/))
+- Modern JavaScript with support for ES2017 (via [**Babel**](https://babeljs.io/))
+- Modern CSS via [**Sass**](https://www.npmjs.com/package/node-sass), PostCSS, [**Cssnext**](http://cssnext.io/), and Autoprefixer
+
+As well as:
+
 - Support for Pug (as well as any templating language) via [jstransformer](https://github.com/RobLoach/metalsmith-jstransformer)
 - Production-ready tools (JS and CSS compression)
 - Super-useful development server (via [metalsmith-start](https://www.npmjs.com/package/metalsmith-start))
@@ -121,6 +104,26 @@ These things are not included here:
 - Testing boilerplate (bring your own testing tools!)
 - CSS framework (bring your own Bootstrap/Foundation/etc!)
 - ...and so on
+
+<br>
+
+## Paths
+
+`web/` is compiled into `public/`.
+
+- **[web/assets/](web/assets/)** — files compiled into `/public`. Anything not "compilable" is simply copied over.
+    - [app.scss](web/assets/app.scss)
+    - [app.browserify.js](web/assets/app.browserify.js) - compiles web/js/app.js
+    - [vendor.browserify.js](web/assets/vendor.browserify.js) - separate bundle for big 3rd-party modules
+    - [index.pug](web/assets/index.pug)
+    - [robots.txt](web/assets/robots.txt)
+- **[web/css/](web/css/)** — files *@import*ed by assets/app.scss.
+    - [app.scss](web/css/app.scss)
+- **[web/js/](web/js/)** — files compiled by Browserify.
+    - [app.js](web/js/app.js)
+- **[web/layouts/](web/layouts/)** – template layouts.
+    - [base.pug](web/layouts/base.pug)
+- [metalsmith.js](metalsmith.js) — metalsmith configuration.
 
 <br>
 
