@@ -6,9 +6,12 @@ This is a small project that takes a bunch of HTML, CSS, JS files (`web/`) and t
 
 <br>
 
-## Usage
+## Installation
 
-Start your new project like so:
+See instructions for:
+
+<details>
+<summary>**Vanilla** (no framework)</summary>
 
 ```sh
 mkdir my-project
@@ -16,7 +19,50 @@ cd my-project
 curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/INSTALL.sh | bash
 ```
 
-> See [INSTALL.sh](_extras/INSTALL.sh) to see what it does. If you'd like support for React, see [_extras/](_extras).
+See [INSTALL.sh](_extras/INSTALL.sh) to see what it does.
+</details>
+
+
+<details>
+<summary>with **Decca**</summary>
+
+[Decca](http://ricostacruz.com/decca) is a React-like library for rendering functional views.
+
+```sh
+# Run both:
+curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/INSTALL.sh | bash
+curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/decca/INSTALL.sh | bash
+```
+</details>
+
+<details>
+<summary>with **React** + **Redux**</summary>
+
+This is a React boilerplate with Redux. It uses [riot-route](https://www.npmjs.com/package/riot-route) for routing.
+
+```sh
+# Run both:
+curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/INSTALL.sh | bash
+curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/react/INSTALL.sh | bash
+```
+
+</details>
+
+
+<details>
+<summary>in a **Phoenix** project</summary>
+
+Experimental! Use this with [Phoenix](http://phoenixframework.org/) to replace Brunch with Metalsmith. Bootstrap your app with `mix phoenix.new --no-brunch`, then:
+
+```sh
+# Run both:
+curl -sSL https://raw.githubusercontent.com/rstacruz/frontend-starter-kit/master/_extras/phoenix/INSTALL.sh | bash
+```
+</details>
+
+<br>
+
+## Usage
 
 Run in development (or production):
 
